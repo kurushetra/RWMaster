@@ -16,8 +16,10 @@
 		61D8AC641613878E00F4B323 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC631613878E00F4B323 /* Default.png */; };
 		61D8AC661613878E00F4B323 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC651613878E00F4B323 /* Default@2x.png */; };
 		61D8AC681613878E00F4B323 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC671613878E00F4B323 /* Default-568h@2x.png */; };
-		61D8AC6B1613878E00F4B323 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC691613878E00F4B323 /* MainStoryboard.storyboard */; };
-		61D8AC6E1613878E00F4B323 /* RWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC6D1613878E00F4B323 /* RWViewController.m */; };
+		61D8AC781613911600F4B323 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC751613911600F4B323 /* LSViewController.m */; };
+		61D8AC7B1613915300F4B323 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC7A1613915300F4B323 /* MainStoryboard.storyboard */; };
+		61D8AC7E161392EF00F4B323 /* RWTaal.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC7D161392EF00F4B323 /* RWTaal.m */; };
+		61D8AC81161393E400F4B323 /* RWChooseRagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +36,13 @@
 		61D8AC631613878E00F4B323 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		61D8AC651613878E00F4B323 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		61D8AC671613878E00F4B323 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		61D8AC6A1613878E00F4B323 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		61D8AC6C1613878E00F4B323 /* RWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWViewController.h; sourceTree = "<group>"; };
-		61D8AC6D1613878E00F4B323 /* RWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
+		61D8AC741613911600F4B323 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
+		61D8AC751613911600F4B323 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
+		61D8AC7A1613915300F4B323 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		61D8AC7C161392EF00F4B323 /* RWTaal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTaal.h; sourceTree = "<group>"; };
+		61D8AC7D161392EF00F4B323 /* RWTaal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTaal.m; sourceTree = "<group>"; };
+		61D8AC7F161393E400F4B323 /* RWChooseRagaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWChooseRagaViewController.h; sourceTree = "<group>"; };
+		61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWChooseRagaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +89,15 @@
 		61D8AC571613878E00F4B323 /* RagaWriterMaster */ = {
 			isa = PBXGroup;
 			children = (
+				61D8AC7F161393E400F4B323 /* RWChooseRagaViewController.h */,
+				61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */,
+				61D8AC7C161392EF00F4B323 /* RWTaal.h */,
+				61D8AC7D161392EF00F4B323 /* RWTaal.m */,
+				61D8AC7A1613915300F4B323 /* MainStoryboard.storyboard */,
+				61D8AC741613911600F4B323 /* LSViewController.h */,
+				61D8AC751613911600F4B323 /* LSViewController.m */,
 				61D8AC601613878E00F4B323 /* RWAppDelegate.h */,
 				61D8AC611613878E00F4B323 /* RWAppDelegate.m */,
-				61D8AC691613878E00F4B323 /* MainStoryboard.storyboard */,
-				61D8AC6C1613878E00F4B323 /* RWViewController.h */,
-				61D8AC6D1613878E00F4B323 /* RWViewController.m */,
 				61D8AC581613878E00F4B323 /* Supporting Files */,
 			);
 			path = RagaWriterMaster;
@@ -163,7 +173,7 @@
 				61D8AC641613878E00F4B323 /* Default.png in Resources */,
 				61D8AC661613878E00F4B323 /* Default@2x.png in Resources */,
 				61D8AC681613878E00F4B323 /* Default-568h@2x.png in Resources */,
-				61D8AC6B1613878E00F4B323 /* MainStoryboard.storyboard in Resources */,
+				61D8AC7B1613915300F4B323 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +186,9 @@
 			files = (
 				61D8AC5E1613878E00F4B323 /* main.m in Sources */,
 				61D8AC621613878E00F4B323 /* RWAppDelegate.m in Sources */,
-				61D8AC6E1613878E00F4B323 /* RWViewController.m in Sources */,
+				61D8AC781613911600F4B323 /* LSViewController.m in Sources */,
+				61D8AC7E161392EF00F4B323 /* RWTaal.m in Sources */,
+				61D8AC81161393E400F4B323 /* RWChooseRagaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +201,6 @@
 				61D8AC5B1613878E00F4B323 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		61D8AC691613878E00F4B323 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61D8AC6A1613878E00F4B323 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

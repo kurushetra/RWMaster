@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *thaatName;
 @property (nonatomic, strong) NSNumber *thaatBytes;
  
-- (IBAction)chooseNewRaga:(id)sender;
+ 
 
 @end

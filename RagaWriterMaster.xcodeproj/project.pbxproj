@@ -23,6 +23,7 @@
 		C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */; };
 		C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEE1614C7F00074ECF0 /* RWSheet.m */; };
 		C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FF11614C8EF0074ECF0 /* RWRaga.m */; };
+		C6431FF81614DF280074ECF0 /* RWSheetBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		C6431FEE1614C7F00074ECF0 /* RWSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheet.m; sourceTree = "<group>"; };
 		C6431FF01614C8EF0074ECF0 /* RWRaga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRaga.h; sourceTree = "<group>"; };
 		C6431FF11614C8EF0074ECF0 /* RWRaga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRaga.m; sourceTree = "<group>"; };
+		C6431FF61614DF280074ECF0 /* RWSheetBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheetBoxCell.h; sourceTree = "<group>"; };
+		C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheetBoxCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 		C6431FE21614BF420074ECF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6431FF61614DF280074ECF0 /* RWSheetBoxCell.h */,
+				C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */,
 				C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */,
 				C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */,
+				C6431FF81614DF280074ECF0 /* RWSheetBoxCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

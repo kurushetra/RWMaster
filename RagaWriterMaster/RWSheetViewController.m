@@ -6,14 +6,15 @@
       //  Copyright (c) 2012 kurushetra. All rights reserved.
       //
 
-#import "LSViewController.h"
+#import "RWSheetViewController.h"
+#import "RWAppSheetsController.h"
 #import "RWTaal.h"
 
-@interface LSViewController ()
+@interface RWSheetViewController ()
 
 @end
 
-@implementation LSViewController
+@implementation RWSheetViewController
 int taalChosed;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,52 +30,54 @@ int taalChosed;
 - (void)viewDidLoad
 {
       [super viewDidLoad];
-      
+    
+    RWAppSheetsController *sheetController = [[RWAppSheetsController alloc]init];
+    [sheetController createSheetWithCossedTaal:_thaatBytes];
+    [self.collectionView setCollectionViewLayout:sheetController.collectionFlowLayout];
+    
+    
             //// SE CREAN LOS DATOS PARA LOS CELLSVIEWSCOLLECTION...
       
       NSMutableArray *TimeSection = [[NSMutableArray alloc] init];
-      NSMutableArray *SumByteSection = [[NSMutableArray alloc] init];
+      //    RWTaal *choosedTaal = [[RWTaal alloc]initWithTaalFromName:_thaatName];
+//     RWTaal *choosedTaal = sheetController.taalNeededBoxes;
+    
       
-            //    RWTaal *choosedTaal = [[RWTaal alloc]initWithTaalFromName:_thaatName];
-      RWTaal *choosedTaal = [[RWTaal alloc]initWithTaalFromBytes:_thaatBytes];
-      
-      
-      for (int i=0; i < choosedTaal.taalNeededBoxes.intValue; i++) {
+      for (int i=0; i < sheetController.taalNeededBoxes.intValue; i++) {
             
             [TimeSection addObject:[NSString stringWithFormat:@"%d",i]];
-            [SumByteSection addObject:[NSString stringWithFormat:@"+"]];
-      }
+       }
       
-      _sheetsNotes = [[NSArray alloc] initWithObjects:TimeSection,SumByteSection,nil];
-      taalChosed = choosedTaal.taalBytes.integerValue;
-      
-      [self.collectionView setCollectionViewLayout:[self flowLayoutForTaal:choosedTaal.taalBytes.integerValue]];
+      _sheetsNotes = [[NSArray alloc] initWithObjects:TimeSection,nil];
+//      taalChosed = choosedTaal.taalBytes.integerValue;
+    
+//      [self.collectionView setCollectionViewLayout:[self flowLayoutForTaal:choosedTaal.taalBytes.integerValue]];
       [self activateGesturesReconizers];
       
       
 }
--(UICollectionViewFlowLayout*)flowLayoutForTaal:(NSInteger)taalbytes {
-      
-      CGRect screenRect = [[UIScreen mainScreen] bounds];
-      CGFloat screenHeight = screenRect.size.height;
-      
-      int cellsHeight = 60 * taalbytes;
-      int freeSpace = screenHeight - cellsHeight;
-      int resultSideSpace = (freeSpace / 2) - (taalbytes / 2);
-      
-      
-      UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-      [flowLayout setItemSize:CGSizeMake(60,60)];
-      [flowLayout setMinimumInteritemSpacing:1];
-      [flowLayout setMinimumLineSpacing:2];
-      [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-      [flowLayout setHeaderReferenceSize: CGSizeMake(512,97)];
-      [flowLayout setFooterReferenceSize:CGSizeMake(512, 117)];
-      [flowLayout setSectionInset:UIEdgeInsetsMake(50.0,resultSideSpace,263.0,resultSideSpace)];
-      
-      return flowLayout;
-      
-}
+//-(UICollectionViewFlowLayout*)flowLayoutForTaal:(NSInteger)taalbytes {
+//      
+//      CGRect screenRect = [[UIScreen mainScreen] bounds];
+//      CGFloat screenHeight = screenRect.size.height;
+//      
+//      int cellsHeight = 60 * taalbytes;
+//      int freeSpace = screenHeight - cellsHeight;
+//      int resultSideSpace = (freeSpace / 2) - (taalbytes / 2);
+//      
+//      
+//      UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//      [flowLayout setItemSize:CGSizeMake(60,60)];
+//      [flowLayout setMinimumInteritemSpacing:1];
+//      [flowLayout setMinimumLineSpacing:2];
+//      [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+//      [flowLayout setHeaderReferenceSize: CGSizeMake(512,97)];
+//      [flowLayout setFooterReferenceSize:CGSizeMake(512, 117)];
+//      [flowLayout setSectionInset:UIEdgeInsetsMake(50.0,resultSideSpace,263.0,resultSideSpace)];
+//      
+//      return flowLayout;
+//      
+//}
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
       
       CGSize sizeForItem;
@@ -171,4 +174,6 @@ int taalChosed;
             // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)chooseNewRaga:(id)sender {
+}
 @end

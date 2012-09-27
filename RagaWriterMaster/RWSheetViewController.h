@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LSViewController : UICollectionViewController
+@interface RWSheetViewController : UICollectionViewController
 
 @property (nonatomic, strong) NSArray *sheetsNotes;
 @property (nonatomic, strong) NSString *thaatName;
 @property (nonatomic, strong) NSNumber *thaatBytes;
  
+- (IBAction)chooseNewRaga:(id)sender;
 
 @end

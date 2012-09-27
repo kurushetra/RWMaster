@@ -7,7 +7,7 @@
 //
 
 #import "RWChooseRagaViewController.h"
-#import "LSViewController.h"
+#import "RWSheetViewController.h"
 
 @interface RWChooseRagaViewController ()
 
@@ -33,7 +33,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-     LSViewController *sheetsPanel = [segue destinationViewController];
+     RWSheetViewController *sheetsPanel = [segue destinationViewController];
     
     if ([[segue identifier] isEqualToString:@"toTheRagaSheet"])
        {

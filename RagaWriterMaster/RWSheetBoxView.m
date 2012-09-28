@@ -1,20 +1,20 @@
 //
-//  RWSheetBoxCell.m
+//  RWSheetBoxView.m
 //  RagaWriterMaster
 //
-//  Created by kurushetra on 27/09/12.
+//  Created by kurushetra on 28/09/12.
 //  Copyright (c) 2012 luis sintes. All rights reserved.
 //
 
-#import "RWSheetBoxCell.h"
+#import "RWSheetBoxView.h"
 
-@implementation RWSheetBoxCell
+@implementation RWSheetBoxView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+         
     }
     return self;
 }

@@ -7,6 +7,7 @@
       //
 
 #import "RWSheetViewController.h"
+#import "RWSheetBoxView.h"
 #import "RWChooseRagaViewController.h"
 #import "RWAppSheetsController.h"
 #import "RWTaal.h"
@@ -47,9 +48,7 @@ int taalChosed;
       _sheetsNotes = [[NSArray alloc] initWithObjects:TimeSection,nil];
     
     
-    
-    
-       [self activateGesturesReconizers];
+      [self activateGesturesReconizers];
       
       
 }
@@ -117,10 +116,13 @@ int taalChosed;
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
       
       static NSString *cellIdentifier = @"Part";
-      
-      UICollectionViewCell *cell   = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-      
-      
+    
+    RWSheetBoxView *cell = (RWSheetBoxView *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+
+    
+//      UICollectionViewCell *cell   = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    [cell.labelNoteText setText:@"sisi"];
       return cell;
       
 }

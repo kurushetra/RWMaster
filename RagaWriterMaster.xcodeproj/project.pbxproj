@@ -20,10 +20,10 @@
 		61D8AC7B1613915300F4B323 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D8AC7A1613915300F4B323 /* MainStoryboard.storyboard */; };
 		61D8AC7E161392EF00F4B323 /* RWTaal.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC7D161392EF00F4B323 /* RWTaal.m */; };
 		61D8AC81161393E400F4B323 /* RWChooseRagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */; };
+		C64085A51615C03C00494999 /* RWSheetBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C64085A41615C03C00494999 /* RWSheetBoxView.m */; };
 		C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */; };
 		C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEE1614C7F00074ECF0 /* RWSheet.m */; };
 		C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FF11614C8EF0074ECF0 /* RWRaga.m */; };
-		C6431FF81614DF280074ECF0 /* RWSheetBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +47,14 @@
 		61D8AC7D161392EF00F4B323 /* RWTaal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTaal.m; sourceTree = "<group>"; };
 		61D8AC7F161393E400F4B323 /* RWChooseRagaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWChooseRagaViewController.h; sourceTree = "<group>"; };
 		61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWChooseRagaViewController.m; sourceTree = "<group>"; };
+		C64085A31615C03C00494999 /* RWSheetBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheetBoxView.h; sourceTree = "<group>"; };
+		C64085A41615C03C00494999 /* RWSheetBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheetBoxView.m; sourceTree = "<group>"; };
 		C6431FEA1614C0F90074ECF0 /* RWAppSheetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAppSheetsController.h; sourceTree = "<group>"; };
 		C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAppSheetsController.m; sourceTree = "<group>"; };
 		C6431FED1614C7F00074ECF0 /* RWSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheet.h; sourceTree = "<group>"; };
 		C6431FEE1614C7F00074ECF0 /* RWSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheet.m; sourceTree = "<group>"; };
 		C6431FF01614C8EF0074ECF0 /* RWRaga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRaga.h; sourceTree = "<group>"; };
 		C6431FF11614C8EF0074ECF0 /* RWRaga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRaga.m; sourceTree = "<group>"; };
-		C6431FF61614DF280074ECF0 /* RWSheetBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheetBoxCell.h; sourceTree = "<group>"; };
-		C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheetBoxCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		C6431FE21614BF420074ECF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C6431FF61614DF280074ECF0 /* RWSheetBoxCell.h */,
-				C6431FF71614DF280074ECF0 /* RWSheetBoxCell.m */,
+				C64085A31615C03C00494999 /* RWSheetBoxView.h */,
+				C64085A41615C03C00494999 /* RWSheetBoxView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 				C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */,
 				C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */,
 				C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */,
-				C6431FF81614DF280074ECF0 /* RWSheetBoxCell.m in Sources */,
+				C64085A51615C03C00494999 /* RWSheetBoxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

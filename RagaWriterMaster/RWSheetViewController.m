@@ -116,14 +116,14 @@ int taalChosed;
     //// numero de secciones 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return [_sheetsNotes count];
+    return  1;
 }
 
     //// numero de celdas por seccion
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    NSMutableArray *sectionArray = [_sheetsNotes objectAtIndex:section];
-    return [sectionArray count];
+//    NSMutableArray *sectionArray = [_sheetsNotes objectAtIndex:section];
+    return taalChosed * 7;
 }
 
     ////  box notes views y se muestran
@@ -134,10 +134,32 @@ int taalChosed;
     RWSheetBoxView *cell = (RWSheetBoxView *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     
-        //      UICollectionViewCell *cell   = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    [cell.labelNoteText setText:@"sisi"];
-    return cell;
+    if (indexPath.row < taalChosed) {
+        
+        [cell.labelNoteText setText:@"1"];
+        
+    }else if (indexPath.row < taalChosed * 2) {
+        
+        [cell.labelNoteText setText:@"+"];
+    }
+    else if ((indexPath.row > (taalChosed * 3) -1) & (indexPath.row < taalChosed * 4)) {
+        [cell.labelNoteText setText:@"/"];
+
+     }
+    else if  ((indexPath.row > (taalChosed * 5) -1) & (indexPath.row < taalChosed * 6)) {
+        [cell.labelNoteText setText:@"/"];
+
+     }
+    else if  (indexPath.row > (taalChosed * 6) -1)  {
+        [cell.labelNoteText setText:@"din"];
+        
+    }
+    else {
+        [cell.labelNoteText setText:@"Sa,Re"];
+    }
+
+             
+     return cell;
     
 }
     ////  header y footer

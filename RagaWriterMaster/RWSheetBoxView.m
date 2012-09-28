@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-         
+        
     }
     return self;
 }
@@ -24,8 +24,9 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+     [_labelNoteText setText:@"hola"];
 }
 */
+
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612F0352161639BB00B4D2BB /* marcoCelda1.png in Resources */ = {isa = PBXBuildFile; fileRef = 612F0351161639BB00B4D2BB /* marcoCelda1.png */; };
 		61D8AC521613878E00F4B323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC511613878E00F4B323 /* UIKit.framework */; };
 		61D8AC541613878E00F4B323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC531613878E00F4B323 /* Foundation.framework */; };
 		61D8AC561613878E00F4B323 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC551613878E00F4B323 /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612F0351161639BB00B4D2BB /* marcoCelda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcoCelda1.png; sourceTree = "<group>"; };
 		61D8AC4D1613878E00F4B323 /* RagaWriterMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RagaWriterMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D8AC511613878E00F4B323 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		61D8AC531613878E00F4B323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		612F034F1616398800B4D2BB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				612F0351161639BB00B4D2BB /* marcoCelda1.png */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
 		61D8AC421613878E00F4B323 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 				C6431FE21614BF420074ECF0 /* Views */,
 				C6431FE11614BF370074ECF0 /* Controllers */,
 				C6431FE01614BF2B0074ECF0 /* Model */,
+				612F034F1616398800B4D2BB /* Theme */,
 				61D8AC581613878E00F4B323 /* Supporting Files */,
 			);
 			path = RagaWriterMaster;
@@ -242,6 +253,7 @@
 				61D8AC661613878E00F4B323 /* Default@2x.png in Resources */,
 				61D8AC681613878E00F4B323 /* Default-568h@2x.png in Resources */,
 				61D8AC7B1613915300F4B323 /* MainStoryboard.storyboard in Resources */,
+				612F0352161639BB00B4D2BB /* marcoCelda1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

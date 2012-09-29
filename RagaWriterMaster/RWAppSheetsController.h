@@ -17,6 +17,7 @@
 @property(nonatomic,retain) UICollectionViewFlowLayout *collectionFlowLayout;
 
 -(void)createSheetWithCossedTaal:(id)theChoosedTaal;
+- (void)prepareSheetsDataToShow;
 //-(UICollectionViewFlowLayout*)collectionViewLayoutFromTaal:(id)choosedTaal;
 
 @end

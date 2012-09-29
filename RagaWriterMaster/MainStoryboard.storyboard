@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="B3v-wK-ZkA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="B3v-wK-ZkA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
@@ -20,8 +20,141 @@
                             <inset key="sectionInset" minX="170" minY="50" maxX="170" maxY="100"/>
                         </collectionViewFlowLayout>
                         <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A68-zB-qNl">
+                                <rect key="frame" x="170" y="147" width="420" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="372"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXW-et-kek">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="5jv-7D-npo"/>
+                                                <constraint firstAttribute="height" constant="46" id="n77-UP-ezg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="SA">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-eF-9ml">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="tyu-aY-cdv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="RE">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-tK-rt4">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="FPd-cx-HSb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="ga">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2c-Sk-rTv">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="3I2-hQ-fsE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="MA">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG0-9E-6at">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="HaY-TU-xCP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="PA">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpU-2z-ziE">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="djv-9D-xug"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="da">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-Dh-bRd">
+                                            <color key="backgroundColor" red="0.847681091" green="0.74383349489999995" blue="0.14710525199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="49" id="lpe-nr-OU2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="NI">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="QXW-et-kek" firstAttribute="bottom" secondItem="FXY-eF-9ml" secondAttribute="bottom" type="default" id="46q-5f-8Nb"/>
+                                    <constraint firstItem="FXY-eF-9ml" firstAttribute="leading" secondItem="QXW-et-kek" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4Oz-mq-SjR"/>
+                                    <constraint firstItem="QXW-et-kek" firstAttribute="top" secondItem="FXY-eF-9ml" secondAttribute="top" type="default" id="8N3-EX-IWc"/>
+                                    <constraint firstItem="t8Y-Dh-bRd" firstAttribute="bottom" secondItem="xpU-2z-ziE" secondAttribute="bottom" type="default" id="AJA-Qx-gbO"/>
+                                    <constraint firstItem="SG0-9E-6at" firstAttribute="leading" secondItem="z2c-Sk-rTv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="BiM-vU-g9F"/>
+                                    <constraint firstItem="vkD-tK-rt4" firstAttribute="bottom" secondItem="z2c-Sk-rTv" secondAttribute="bottom" type="default" id="EPb-Af-IJ5"/>
+                                    <constraint firstItem="xpU-2z-ziE" firstAttribute="top" secondItem="SG0-9E-6at" secondAttribute="top" type="default" id="Eai-Cc-BDW"/>
+                                    <constraint firstItem="QXW-et-kek" firstAttribute="top" secondItem="A68-zB-qNl" secondAttribute="top" constant="25" id="FKY-02-5vu"/>
+                                    <constraint firstItem="FXY-eF-9ml" firstAttribute="bottom" secondItem="vkD-tK-rt4" secondAttribute="bottom" type="default" id="GDf-la-F6v"/>
+                                    <constraint firstItem="z2c-Sk-rTv" firstAttribute="leading" secondItem="vkD-tK-rt4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LzX-0w-9nJ"/>
+                                    <constraint firstItem="vkD-tK-rt4" firstAttribute="leading" secondItem="FXY-eF-9ml" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="OJA-uV-vS2"/>
+                                    <constraint firstItem="SG0-9E-6at" firstAttribute="bottom" secondItem="z2c-Sk-rTv" secondAttribute="bottom" type="default" id="Qjc-Gf-J3L"/>
+                                    <constraint firstItem="t8Y-Dh-bRd" firstAttribute="leading" secondItem="xpU-2z-ziE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="R1f-ex-8Wl"/>
+                                    <constraint firstItem="xpU-2z-ziE" firstAttribute="top" secondItem="t8Y-Dh-bRd" secondAttribute="top" type="default" id="Su9-Nr-OXQ"/>
+                                    <constraint firstItem="z2c-Sk-rTv" firstAttribute="centerX" secondItem="A68-zB-qNl" secondAttribute="centerX" type="default" id="a4D-Wq-Lyw"/>
+                                    <constraint firstItem="xpU-2z-ziE" firstAttribute="leading" secondItem="SG0-9E-6at" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cgG-o4-9dW"/>
+                                    <constraint firstItem="z2c-Sk-rTv" firstAttribute="top" secondItem="vkD-tK-rt4" secondAttribute="top" type="default" id="gky-OP-Sni"/>
+                                    <constraint firstItem="xpU-2z-ziE" firstAttribute="bottom" secondItem="SG0-9E-6at" secondAttribute="bottom" type="default" id="vbT-Z0-YQf"/>
+                                    <constraint firstItem="vkD-tK-rt4" firstAttribute="top" secondItem="FXY-eF-9ml" secondAttribute="top" type="default" id="wL3-fq-ZhN"/>
+                                    <constraint firstItem="SG0-9E-6at" firstAttribute="top" secondItem="z2c-Sk-rTv" secondAttribute="top" type="default" id="y5q-5c-dp0"/>
+                                </constraints>
+                                <size key="customSize" width="420" height="372"/>
+                            </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Part" id="88H-is-EwA" customClass="RWSheetBoxView">
-                                <rect key="frame" x="170" y="147" width="55" height="55"/>
+                                <rect key="frame" x="590" y="305" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
@@ -85,7 +218,7 @@
                             </constraints>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" reuseIdentifier="PartFooter" id="EYG-a3-OO7">
-                            <rect key="frame" x="0.0" y="302" width="1024" height="110"/>
+                            <rect key="frame" x="0.0" y="619" width="1024" height="110"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pages up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcV-jA-uel">
@@ -123,7 +256,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQ6-mA-Drw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-801" y="-515"/>
+            <point key="canvasLocation" x="-996" y="-521"/>
         </scene>
         <!--Choose Raga View Controller-->
         <scene sceneID="mvQ-B0-dMG">
@@ -451,6 +584,41 @@
             <point key="canvasLocation" x="-2127" y="-1537"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RWChooseRagaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWChooseRagaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addNewRaga:"/>
+            </relationships>
+        </class>
+        <class className="RWSheetBoxView" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWSheetBoxView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelNoteText" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RWSheetViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWSheetViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

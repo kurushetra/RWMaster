@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		612F0352161639BB00B4D2BB /* marcoCelda1.png in Resources */ = {isa = PBXBuildFile; fileRef = 612F0351161639BB00B4D2BB /* marcoCelda1.png */; };
+		61B8190C1617A960001804A6 /* NoteEditBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B8190B1617A960001804A6 /* NoteEditBox.xib */; };
+		61B8190F1617AFFD001804A6 /* SitarNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B8190E1617AFFD001804A6 /* SitarNotes.png */; };
+		61B819121617B154001804A6 /* RWNoteEditionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B819111617B154001804A6 /* RWNoteEditionView.m */; };
 		61D8AC521613878E00F4B323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC511613878E00F4B323 /* UIKit.framework */; };
 		61D8AC541613878E00F4B323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC531613878E00F4B323 /* Foundation.framework */; };
 		61D8AC561613878E00F4B323 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC551613878E00F4B323 /* CoreGraphics.framework */; };
@@ -29,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		612F0351161639BB00B4D2BB /* marcoCelda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcoCelda1.png; sourceTree = "<group>"; };
+		61B8190B1617A960001804A6 /* NoteEditBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteEditBox.xib; sourceTree = "<group>"; };
+		61B8190E1617AFFD001804A6 /* SitarNotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SitarNotes.png; sourceTree = "<group>"; };
+		61B819101617B154001804A6 /* RWNoteEditionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWNoteEditionView.h; sourceTree = "<group>"; };
+		61B819111617B154001804A6 /* RWNoteEditionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWNoteEditionView.m; sourceTree = "<group>"; };
 		61D8AC4D1613878E00F4B323 /* RagaWriterMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RagaWriterMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D8AC511613878E00F4B323 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		61D8AC531613878E00F4B323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +83,7 @@
 		612F034F1616398800B4D2BB /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				61B8190E1617AFFD001804A6 /* SitarNotes.png */,
 				612F0351161639BB00B4D2BB /* marcoCelda1.png */,
 			);
 			name = Theme;
@@ -157,8 +165,11 @@
 		C6431FE21614BF420074ECF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				61B8190B1617A960001804A6 /* NoteEditBox.xib */,
 				C64085A31615C03C00494999 /* RWSheetBoxView.h */,
 				C64085A41615C03C00494999 /* RWSheetBoxView.m */,
+				61B819101617B154001804A6 /* RWNoteEditionView.h */,
+				61B819111617B154001804A6 /* RWNoteEditionView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -254,6 +265,8 @@
 				61D8AC681613878E00F4B323 /* Default-568h@2x.png in Resources */,
 				61D8AC7B1613915300F4B323 /* MainStoryboard.storyboard in Resources */,
 				612F0352161639BB00B4D2BB /* marcoCelda1.png in Resources */,
+				61B8190C1617A960001804A6 /* NoteEditBox.xib in Resources */,
+				61B8190F1617AFFD001804A6 /* SitarNotes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,7 @@
 				C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */,
 				C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */,
 				C64085A51615C03C00494999 /* RWSheetBoxView.m in Sources */,
+				61B819121617B154001804A6 /* RWNoteEditionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

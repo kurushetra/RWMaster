@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RWTaal.h"
+#import "RWSheet.h"
 
 @interface RWRaga : NSObject
 
@@ -22,8 +23,10 @@
 @property (nonatomic,retain) NSArray *CatchNotes;
 @property (nonatomic,retain) NSArray *DroneNotes;
 
+@property (nonatomic,retain) NSMutableArray *ragaSheets;
 
-- (id)initWithRaga:(NSString*)aRaga;
-- (void)playRaga;
+- (void)addSheet:(RWSheet*)aSheet;
+//- (id)initWithRaga:(NSString*)aRaga;
+//- (void)playRaga;
 
 @end

@@ -43,11 +43,10 @@ int taalChosed;
       sheetsDataStore = (RWAppDelegate *)[UIApplication sharedApplication].delegate;
       
       RWAppSheetsController *sheetController = [[RWAppSheetsController alloc]init];
-      [sheetController createSheetWithCossedTaal:_thaatBytes];
+      [sheetController createSheetWithBytes:_thaatBytes];
       taalChosed = _thaatBytes.intValue;
-      [sheetController prepareSheetsDataToShow];
-      
-      [self.collectionView setCollectionViewLayout:sheetController.collectionFlowLayout];
+     
+      [self.collectionView setCollectionViewLayout:[sheetController viewLayout]];
       [self activateGesturesReconizers];
       
       

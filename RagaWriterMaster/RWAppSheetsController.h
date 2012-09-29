@@ -13,11 +13,8 @@
 
 
 @property(nonatomic,retain) RWRaga *raga;
-@property(nonatomic,retain) NSNumber *taalNeededBoxes;
-@property(nonatomic,retain) UICollectionViewFlowLayout *collectionFlowLayout;
+@property(nonatomic,retain) UICollectionViewFlowLayout *viewLayout;
 
--(void)createSheetWithCossedTaal:(id)theChoosedTaal;
-- (void)prepareSheetsDataToShow;
-//-(UICollectionViewFlowLayout*)collectionViewLayoutFromTaal:(id)choosedTaal;
+- (void)createSheetWithBytes:(NSNumber*)taalBytes;
 
 @end

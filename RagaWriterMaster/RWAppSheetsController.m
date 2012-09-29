@@ -33,10 +33,7 @@ RWAppDelegate *sheetsDataStore;
       
       _viewLayout = newSheet.collectionFlowLayout;
       sheetsDataStore.sheetData = newSheet.theDataToShow;
-      
+    
+    
 }
-
-
-
-
 @end

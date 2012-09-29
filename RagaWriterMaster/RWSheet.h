@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RWTaal.h"
 
 @interface RWSheet : NSObject
+
+@property (nonatomic,retain) RWTaal *sheetTaal;
+@property(nonatomic,retain) UICollectionViewFlowLayout *collectionFlowLayout;
+@property(nonatomic,retain)  NSArray *theDataToShow;
+
+
+- (id)initWithBytes:(NSNumber*)taalBytes;
+- (void)createSheetWithCossedTaal:(id)theChoosedTaal;
+- (void)prepareSheetsDataToShow;
+ 
 
 @end

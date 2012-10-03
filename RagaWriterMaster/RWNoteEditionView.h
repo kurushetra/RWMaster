@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RWNoteEditionView : UICollectionViewCell
+@interface RWNoteEditionView : UIView 
+
+
+@property (strong, nonatomic) IBOutlet UITextView *textViewNoteResult;
+@property (weak, nonatomic) IBOutlet UIView *pruebaView;
+
+- (IBAction)insertNote:(id)sender;
 
 @end

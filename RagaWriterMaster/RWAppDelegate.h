@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RWRagaWriterController.h"
 
 @interface RWAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (retain,nonatomic)  RWRagaWriterController *ragaWriter;
 @property (retain,nonatomic)  NSArray *sheetData;
+
 
 @end

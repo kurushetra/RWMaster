@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		612F0352161639BB00B4D2BB /* marcoCelda1.png in Resources */ = {isa = PBXBuildFile; fileRef = 612F0351161639BB00B4D2BB /* marcoCelda1.png */; };
+		61489AF41618E9FF000DC61C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61489AF31618E9FF000DC61C /* QuartzCore.framework */; };
 		61B8190C1617A960001804A6 /* NoteEditBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B8190B1617A960001804A6 /* NoteEditBox.xib */; };
 		61B8190F1617AFFD001804A6 /* SitarNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B8190E1617AFFD001804A6 /* SitarNotes.png */; };
 		61B819121617B154001804A6 /* RWNoteEditionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B819111617B154001804A6 /* RWNoteEditionView.m */; };
+		61B819151617DD4F001804A6 /* RWNoteEditPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B819141617DD4F001804A6 /* RWNoteEditPanelViewController.m */; };
 		61D8AC521613878E00F4B323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC511613878E00F4B323 /* UIKit.framework */; };
 		61D8AC541613878E00F4B323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC531613878E00F4B323 /* Foundation.framework */; };
 		61D8AC561613878E00F4B323 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8AC551613878E00F4B323 /* CoreGraphics.framework */; };
@@ -25,17 +27,21 @@
 		61D8AC7E161392EF00F4B323 /* RWTaal.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC7D161392EF00F4B323 /* RWTaal.m */; };
 		61D8AC81161393E400F4B323 /* RWChooseRagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */; };
 		C64085A51615C03C00494999 /* RWSheetBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C64085A41615C03C00494999 /* RWSheetBoxView.m */; };
-		C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */; };
 		C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FEE1614C7F00074ECF0 /* RWSheet.m */; };
 		C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */ = {isa = PBXBuildFile; fileRef = C6431FF11614C8EF0074ECF0 /* RWRaga.m */; };
+		C6627F66161C7FE000BB8752 /* RWScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C6627F65161C7FE000BB8752 /* RWScoreData.m */; };
+		C67C9D3D161AF7BE007E5C0C /* RWRagaWriterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67C9D3C161AF7BE007E5C0C /* RWRagaWriterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		612F0351161639BB00B4D2BB /* marcoCelda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcoCelda1.png; sourceTree = "<group>"; };
+		61489AF31618E9FF000DC61C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		61B8190B1617A960001804A6 /* NoteEditBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteEditBox.xib; sourceTree = "<group>"; };
 		61B8190E1617AFFD001804A6 /* SitarNotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SitarNotes.png; sourceTree = "<group>"; };
 		61B819101617B154001804A6 /* RWNoteEditionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWNoteEditionView.h; sourceTree = "<group>"; };
 		61B819111617B154001804A6 /* RWNoteEditionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWNoteEditionView.m; sourceTree = "<group>"; };
+		61B819131617DD4F001804A6 /* RWNoteEditPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWNoteEditPanelViewController.h; sourceTree = "<group>"; };
+		61B819141617DD4F001804A6 /* RWNoteEditPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWNoteEditPanelViewController.m; sourceTree = "<group>"; };
 		61D8AC4D1613878E00F4B323 /* RagaWriterMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RagaWriterMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D8AC511613878E00F4B323 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		61D8AC531613878E00F4B323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,12 +64,14 @@
 		61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWChooseRagaViewController.m; sourceTree = "<group>"; };
 		C64085A31615C03C00494999 /* RWSheetBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheetBoxView.h; sourceTree = "<group>"; };
 		C64085A41615C03C00494999 /* RWSheetBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheetBoxView.m; sourceTree = "<group>"; };
-		C6431FEA1614C0F90074ECF0 /* RWAppSheetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAppSheetsController.h; sourceTree = "<group>"; };
-		C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAppSheetsController.m; sourceTree = "<group>"; };
 		C6431FED1614C7F00074ECF0 /* RWSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSheet.h; sourceTree = "<group>"; };
 		C6431FEE1614C7F00074ECF0 /* RWSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSheet.m; sourceTree = "<group>"; };
 		C6431FF01614C8EF0074ECF0 /* RWRaga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRaga.h; sourceTree = "<group>"; };
 		C6431FF11614C8EF0074ECF0 /* RWRaga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRaga.m; sourceTree = "<group>"; };
+		C6627F64161C7FE000BB8752 /* RWScoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWScoreData.h; sourceTree = "<group>"; };
+		C6627F65161C7FE000BB8752 /* RWScoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWScoreData.m; sourceTree = "<group>"; };
+		C67C9D3B161AF7BE007E5C0C /* RWRagaWriterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRagaWriterController.h; sourceTree = "<group>"; };
+		C67C9D3C161AF7BE007E5C0C /* RWRagaWriterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRagaWriterController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61489AF41618E9FF000DC61C /* QuartzCore.framework in Frameworks */,
 				61D8AC521613878E00F4B323 /* UIKit.framework in Frameworks */,
 				61D8AC541613878E00F4B323 /* Foundation.framework in Frameworks */,
 				61D8AC561613878E00F4B323 /* CoreGraphics.framework in Frameworks */,
@@ -89,9 +98,22 @@
 			name = Theme;
 			sourceTree = "<group>";
 		};
+		61489B091618EE0C000DC61C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C64085A41615C03C00494999 /* RWSheetBoxView.m */,
+				C64085A31615C03C00494999 /* RWSheetBoxView.h */,
+				61B819101617B154001804A6 /* RWNoteEditionView.h */,
+				61B819111617B154001804A6 /* RWNoteEditionView.m */,
+				61B8190B1617A960001804A6 /* NoteEditBox.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		61D8AC421613878E00F4B323 = {
 			isa = PBXGroup;
 			children = (
+				61489AF31618E9FF000DC61C /* QuartzCore.framework */,
 				61D8AC571613878E00F4B323 /* RagaWriterMaster */,
 				61D8AC501613878E00F4B323 /* Frameworks */,
 				61D8AC4E1613878E00F4B323 /* Products */,
@@ -122,8 +144,8 @@
 				61D8AC611613878E00F4B323 /* RWAppDelegate.m */,
 				61D8AC601613878E00F4B323 /* RWAppDelegate.h */,
 				61D8AC7A1613915300F4B323 /* MainStoryboard.storyboard */,
-				C6431FE21614BF420074ECF0 /* Views */,
 				C6431FE11614BF370074ECF0 /* Controllers */,
+				C6431FE21614BF420074ECF0 /* Views */,
 				C6431FE01614BF2B0074ECF0 /* Model */,
 				612F034F1616398800B4D2BB /* Theme */,
 				61D8AC581613878E00F4B323 /* Supporting Files */,
@@ -157,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				C6431FE41614BF9C0074ECF0 /* RWControllers */,
-				C6431FE31614BF730074ECF0 /* ViewControllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -165,11 +186,8 @@
 		C6431FE21614BF420074ECF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				61B8190B1617A960001804A6 /* NoteEditBox.xib */,
-				C64085A31615C03C00494999 /* RWSheetBoxView.h */,
-				C64085A41615C03C00494999 /* RWSheetBoxView.m */,
-				61B819101617B154001804A6 /* RWNoteEditionView.h */,
-				61B819111617B154001804A6 /* RWNoteEditionView.m */,
+				C6431FE31614BF730074ECF0 /* ViewControllers */,
+				61489B091618EE0C000DC61C /* Views */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -178,9 +196,11 @@
 			isa = PBXGroup;
 			children = (
 				61D8AC80161393E400F4B323 /* RWChooseRagaViewController.m */,
-				61D8AC7F161393E400F4B323 /* RWChooseRagaViewController.h */,
 				61D8AC751613911600F4B323 /* RWSheetViewController.m */,
+				61B819141617DD4F001804A6 /* RWNoteEditPanelViewController.m */,
+				61D8AC7F161393E400F4B323 /* RWChooseRagaViewController.h */,
 				61D8AC741613911600F4B323 /* RWSheetViewController.h */,
+				61B819131617DD4F001804A6 /* RWNoteEditPanelViewController.h */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -188,8 +208,8 @@
 		C6431FE41614BF9C0074ECF0 /* RWControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6431FEB1614C0F90074ECF0 /* RWAppSheetsController.m */,
-				C6431FEA1614C0F90074ECF0 /* RWAppSheetsController.h */,
+				C67C9D3C161AF7BE007E5C0C /* RWRagaWriterController.m */,
+				C67C9D3B161AF7BE007E5C0C /* RWRagaWriterController.h */,
 			);
 			name = RWControllers;
 			sourceTree = "<group>";
@@ -197,12 +217,14 @@
 		C6431FE51614BFB90074ECF0 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				C6627F65161C7FE000BB8752 /* RWScoreData.m */,
 				C6431FEE1614C7F00074ECF0 /* RWSheet.m */,
-				C6431FED1614C7F00074ECF0 /* RWSheet.h */,
 				C6431FF11614C8EF0074ECF0 /* RWRaga.m */,
-				C6431FF01614C8EF0074ECF0 /* RWRaga.h */,
 				61D8AC7D161392EF00F4B323 /* RWTaal.m */,
+				C6431FED1614C7F00074ECF0 /* RWSheet.h */,
+				C6431FF01614C8EF0074ECF0 /* RWRaga.h */,
 				61D8AC7C161392EF00F4B323 /* RWTaal.h */,
+				C6627F64161C7FE000BB8752 /* RWScoreData.h */,
 			);
 			name = Sheets;
 			sourceTree = "<group>";
@@ -282,11 +304,13 @@
 				61D8AC781613911600F4B323 /* RWSheetViewController.m in Sources */,
 				61D8AC7E161392EF00F4B323 /* RWTaal.m in Sources */,
 				61D8AC81161393E400F4B323 /* RWChooseRagaViewController.m in Sources */,
-				C6431FEC1614C0F90074ECF0 /* RWAppSheetsController.m in Sources */,
 				C6431FEF1614C7F00074ECF0 /* RWSheet.m in Sources */,
 				C6431FF21614C8EF0074ECF0 /* RWRaga.m in Sources */,
 				C64085A51615C03C00494999 /* RWSheetBoxView.m in Sources */,
 				61B819121617B154001804A6 /* RWNoteEditionView.m in Sources */,
+				61B819151617DD4F001804A6 /* RWNoteEditPanelViewController.m in Sources */,
+				C67C9D3D161AF7BE007E5C0C /* RWRagaWriterController.m in Sources */,
+				C6627F66161C7FE000BB8752 /* RWScoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

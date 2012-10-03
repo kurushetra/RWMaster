@@ -7,6 +7,8 @@
 //
 
 #import "RWChooseRagaViewController.h"
+#import "RWAppDelegate.h"
+#import "RWRagaWriterController.h"
 #import "RWSheetViewController.h"
 
 @interface RWChooseRagaViewController ()
@@ -14,6 +16,8 @@
 @end
 
 @implementation RWChooseRagaViewController
+
+RWAppDelegate *appDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,22 +31,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    	 
+      appDelegate = (RWAppDelegate *)[UIApplication sharedApplication].delegate;
+      
 }
 #pragma mark - SEGUE DELEGATE
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-     RWSheetViewController *sheetsPanel = [segue destinationViewController];
-    
+      
+    RWSheetViewController *sheetsPanel = [segue destinationViewController];
+      
     if ([[segue identifier] isEqualToString:@"toTheRagaSheet"])
        {
-        sheetsPanel.thaatBytes = [NSNumber numberWithInteger:[sender tag]];
-//           sheetsPanel.thaatName = @"roopak";
+            /* al raga initFromRagaAndTaal lo iniciamos aqui y se lo pasamos al
+                ragawriter init withraga
+             
+               */
+        
+             RWRagaWriterController *ragaWriter = [RWRagaWriterController new];
+             [ragaWriter newRagaFromRagaAndTaal:@"chosedRagaString" taal:[NSNumber numberWithInteger:[sender tag]]];
+             appDelegate.ragaWriter = ragaWriter;
+             sheetsPanel.ragaWriter = appDelegate.ragaWriter;
        }
-         
-    
-}
+      
+    }
 
 - (IBAction)addNewRaga:(id)sender {
     

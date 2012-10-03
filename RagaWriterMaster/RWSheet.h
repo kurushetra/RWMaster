@@ -12,13 +12,14 @@
 @interface RWSheet : NSObject
 
 @property (nonatomic,retain) RWTaal *sheetTaal;
+@property (nonatomic,retain)  NSNumber *taalNeededBoxes;
 @property(nonatomic,retain) UICollectionViewFlowLayout *collectionFlowLayout;
-@property(nonatomic,retain)  NSArray *theDataToShow;
+//@property(nonatomic,retain)  NSArray *theDataToShow;
 
 
 - (id)initWithBytes:(NSNumber*)taalBytes;
 - (void)createSheetWithCossedTaal:(id)theChoosedTaal;
-- (void)prepareSheetsDataToShow;
- 
+//- (void)prepareSheetsDataToShow;
+
 
 @end

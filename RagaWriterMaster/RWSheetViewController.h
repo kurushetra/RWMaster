@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RWRagaWriterController.h"
 
 @interface RWSheetViewController : UICollectionViewController
 
-
+@property (nonatomic, strong) RWRagaWriterController *ragaWriter;
 @property (nonatomic, strong) NSArray *sheetsNotes;
 @property (nonatomic, strong) NSString *thaatName;
 @property (nonatomic, strong) NSNumber *thaatBytes;

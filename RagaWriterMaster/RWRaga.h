@@ -8,25 +8,31 @@
 
 #import <Foundation/Foundation.h>
 #import "RWTaal.h"
-#import "RWSheet.h"
+#import "RWScoreData.h"
 
 @interface RWRaga : NSObject
 
-@property (strong,nonatomic) NSString *RagaName;
-@property (strong,nonatomic) NSString *RagaSpeed;
-@property (strong,nonatomic) NSString *RagaScale;
-@property (strong,nonatomic) RWTaal   *taal;
 
-@property (strong,nonatomic) NSString *RagaPlayTime;
-@property (nonatomic,retain) NSArray *Ascendent;
-@property (nonatomic,retain) NSArray *Descendent;
-@property (nonatomic,retain) NSArray *CatchNotes;
-@property (nonatomic,retain) NSArray *DroneNotes;
-
+@property (nonatomic,strong) RWTaal   *taal;
+@property (nonatomic,strong) RWScoreData *scoreData;
 @property (nonatomic,retain) NSMutableArray *ragaSheets;
+@property(nonatomic,retain) UICollectionViewFlowLayout *viewLayout;
 
-- (void)addSheet:(RWSheet*)aSheet;
-//- (id)initWithRaga:(NSString*)aRaga;
-//- (void)playRaga;
+@property (strong,nonatomic) NSString *ragaName;
+@property (strong,nonatomic) NSString *ragaSpeed;
+@property (strong,nonatomic) NSString *ragaScale;
+ 
+@property (strong,nonatomic) NSString *ragaPlayTime;
+@property (nonatomic,retain) NSArray *ascendent;
+@property (nonatomic,retain) NSArray *descendent;
+@property (nonatomic,retain) NSArray *catchNotes;
+@property (nonatomic,retain) NSArray *droneNotes;
+
+
+- (id)initWithNameAndTaal:(NSString *)ragaName taal:(NSNumber*)ragaTaal;
+-(void)prepareScore;
+//- (void)addSheet:(RWSheet*)aSheet;
+
+ 
 
 @end

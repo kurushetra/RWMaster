@@ -16,9 +16,6 @@
 {
     self = [super init];
     if (self) {
-            //TODO: puede que no haga falta inicializarlos propertyes.
-        
-        
         //        appDelagate = (RWAppDelegate *)[UIApplication sharedApplication].delegate;
     }
     return self;
@@ -28,35 +25,11 @@
     _raga = [[RWRaga alloc]initWithNameAndTaal:ragaName taal:ragataal];
     [_raga prepareScore];
     
-//    RWSheet *newSheet = [[RWSheet alloc]initWithBytes:taal];
-//    [_raga addSheet:newSheet];
-//    _raga.RagaName = raga;
-//    _raga.taal = newSheet.sheetTaal;
-//    [_raga.scoreData prepareDataToShow:_raga.taal.taalNeededBoxes.intValue];//TODO: debera estar fuera de aqui.
-//    
-//    //---------------------------------------------------------------
-//    _viewLayout = newSheet.collectionFlowLayout;
-    
-    
 }
-+(NSInteger)indexNeededForLine:(NSInteger)line {
+-(NSInteger)getArrayDataForLine:(NSInteger)line {
+  
     
-    NSInteger dataArrayPosition;
-    
-    if ((line == 2) | (line == 4 )) {
-        dataArrayPosition = 2;
-    }
-    if ((line == 3) | (line == 5 )) {
-        dataArrayPosition = 3;
-    }
-    if (line == 6) {
-        dataArrayPosition = 4;
-    }
-    if ((line == 0) | (line == 1 )) {
-        dataArrayPosition = line;
-    }
-
-    return dataArrayPosition;
+      return dataArrayPosition;
 }
 +(UIView*)cellForRowNumberAndLine:(NSInteger)rowNumber line:(NSInteger)theLine {
     

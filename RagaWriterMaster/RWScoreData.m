@@ -22,6 +22,58 @@ RWAppDelegate *appDelegate;
     }
     return self;
 }
+-(NSInteger)indexNeededForLine:(NSInteger)line  {
+    
+    NSInteger dataArrayPosition;
+    
+    if ((line == 2) | (line == 4 )) {
+        dataArrayPosition = 2;
+    }
+    if ((line == 3) | (line == 5 )) {
+        dataArrayPosition = 3;
+    }
+    if (line == 6) {
+        dataArrayPosition = 4;
+    }
+    if ((line == 0) | (line == 1 )) {
+        dataArrayPosition = line;
+    }
+    
+    return dataArrayPosition;
+}
+-(UIView*)cellForRowNumberAndLine:(NSInteger)rowNumber line:(NSInteger)theLine {
+    
+    UIView *cellChoosed = [UIView new];
+    
+        //// elije las celdas con borde grueso
+    if ((rowNumber % 4) == 0 ) {
+            // cellChoosed.backgroundView = View con Borde Izquierdo
+    }
+    else{
+            //             nada si borde
+    }
+    if (theLine == 0)  {
+        if (rowNumber == 0) {
+                //    cell.backgroundView = View con Borde top Izquierdo
+        }
+        if (rowNumber == 15) {
+                //    cell.backgroundView = View con Borde top derecho
+            
+        }
+    }
+    if (theLine == 6)  {
+        
+        if (rowNumber == 0) {
+                //    cell.backgroundView = View con Borde botom Izquierdo
+        }
+        if (rowNumber == 15) {
+                //    cell.backgroundView = View con Borde botom derecho
+        }
+    }
+    
+    return cellChoosed;
+}
+
 - (void)prepareDataToShow:(NSInteger)taalNeededBoxes {
     
          //// se crean los datos para los cellsviewscollection...

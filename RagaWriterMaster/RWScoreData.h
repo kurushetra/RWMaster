@@ -13,6 +13,7 @@
 @property (strong,nonatomic)  NSArray *allLinesData;
 
 - (void)prepareDataToShow:(NSInteger)taalNeededBoxes;
-
+-(NSInteger)indexNeededForLine:(NSInteger)line;
+-(UIView*)cellForRowNumberAndLine:(NSInteger)rowNumber line:(NSInteger)theLine;
 
 @end

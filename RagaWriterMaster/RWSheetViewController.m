@@ -76,9 +76,8 @@ int taalChosed;
 
     
     //// Elije el indice de los arrays de datos ha usar
-    int dataArrayPosition = [RWRagaWriterController indexNeededForLine:rowLine];
-    
-     theDataToShow = [_ragaWriter.raga.scoreData.allLinesData objectAtIndex:dataArrayPosition];
+    int dataArrayPosition = [_ragaWriter  getArrayDataForLine:rowLine];
+    theDataToShow = [_ragaWriter.raga.scoreData.allLinesData objectAtIndex:dataArrayPosition];
     
      NSLog(@"theDataToShow2 %@",theDataToShow);
     NSLog(@"theDataToShow %@",[_ragaWriter.raga.scoreData.allLinesData objectAtIndex:dataArrayPosition]);
@@ -137,10 +136,7 @@ int taalChosed;
     
     nibView.transform = CGAffineTransformMakeScale(0.0, 0.0);
     
-    [UIView animateWithDuration:0.4
-                          delay:0.0
-                        options:0
-                     animations:^{
+    [UIView animateWithDuration:0.4 delay:0.0 options:0 animations:^{
                              //                             [nibView setAlpha:0.0f];
                          nibView.transform = CGAffineTransformMakeScale(1.0,1.0);
                          nibView.frame = CGRectMake(0,0,397,380);

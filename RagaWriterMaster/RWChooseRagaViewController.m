@@ -40,25 +40,17 @@ RWAppDelegate *appDelegate;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
       
     RWSheetViewController *sheetsPanel = [segue destinationViewController];
-      
     if ([[segue identifier] isEqualToString:@"toTheRagaSheet"])
        {
-            /* al raga initFromRagaAndTaal lo iniciamos aqui y se lo pasamos al
-                ragawriter init withraga
-             
-               */
-        
-             RWRagaWriterController *ragaWriter = [RWRagaWriterController new];
-             [ragaWriter newRagaFromRagaAndTaal:@"chosedRagaString" taal:[NSNumber numberWithInteger:[sender tag]]];
-             appDelegate.ragaWriter = ragaWriter;
-             sheetsPanel.ragaWriter = appDelegate.ragaWriter;
+                  sheetsPanel.ragaWriter = appDelegate.ragaWriter;
        }
-      
-    }
+}
 
 - (IBAction)addNewRaga:(id)sender {
     
+    [ appDelegate.ragaWriter newRagaFromRagaAndTaal:@"Bairavi" taal:[NSNumber numberWithInteger:[sender tag]]];
     [self performSegueWithIdentifier:@"toTheRagaSheet" sender:sender];
+    
 }
 - (void)didReceiveMemoryWarning
 {

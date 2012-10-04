@@ -15,15 +15,11 @@
 
     ////_Propertys
 @property(nonatomic,strong) RWRaga *raga;
-//@property(nonatomic,retain) UICollectionViewFlowLayout *viewLayout;
 
-
-    ////_Class Methods
+     ////_Class Methods
 +(RWSheetBoxView*)cellForRowNumberAndLine:(NSInteger)rowNumber line:(NSInteger)theLine;
-+(NSInteger)indexNeededForLine:(NSInteger)line;
-
-
     ////_Instance Methods
+-(NSInteger)getArrayDataForLine:(NSInteger)line;
 -(void)newRagaFromRagaAndTaal:(NSString*)raga taal:(NSNumber*)taal;
 - (void)createSheetWithBytes:(NSNumber*)taalBytes;
 
